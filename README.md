@@ -204,7 +204,7 @@ The project makes heavy use of two libraries to collect and store the events. Fo
 
 ```
 {
-        "message":"Successfully deleted {count} exams"}
+        "message":"Successfully deleted {count} exams"
 }
 ```
 
