@@ -8,7 +8,7 @@ import (
 	"github.com/r3labs/sse"
 )
 
-// IngestData initializes the connection to the SSE server and populate data store
+// IngestData initializes the connection to the SSE server and populates the data store
 func IngestData(url string) {
 	client := CreateClientConnection(url)
 	Subscribe(client, insertScore)
