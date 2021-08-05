@@ -239,7 +239,7 @@ To build the Docker container, perform the following steps:
 
 ```
 cd /path/to/project
-docker build -t launchdarkly-coding-test .
+docker build -t sse-rest-server .
 docker run -d -p 8080:8080 sse-rest-server
 ```
 
