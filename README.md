@@ -8,7 +8,7 @@
 
 ## Description
 
-In this project, you will find a very simple REST server that provides exam data collected from a third-party [Server-Sent Events](https://www.w3.org/TR/2015/REC-eventsource-20150203/) service. This REST server collects SSE messages in real time, stores these events in an in-memory database and returns this data to clients in a JSON format.
+In this project, you will find a very simple REST server that provides exam data collected from a third-party [Server-Sent Events](https://www.w3.org/TR/2015/REC-eventsource-20150203/) service. This REST server collects SSE messages in real time, stores these events in an in-memory database and returns this data to consumers in a JSON format.
 
 The project makes heavy use of two libraries to collect and store the events. For retrieving events from the SSE service, the project uses [r3labs/sse](https://github.com/r3labs/sse) made by R3 Labs, and for storing the event data the project relies on the [go-membdb](https://github.com/hashicorp/go-memdb) in-memory database solution created by HashiCorp.
 
