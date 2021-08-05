@@ -168,7 +168,7 @@ The project makes heavy use of two libraries to collect and store the events. Fo
 /exams
 ```
 
-> Method: **PUT**
+> Method: **POST**
 
 > Add an exam to the data store
 

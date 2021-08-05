@@ -60,7 +60,7 @@ func addRoutes(port string) {
 	router.HandleFunc("/exams/all", handler.GetAllExams).Methods("GET")
 	router.HandleFunc("/exams/{id}", handler.GetExamByID).Methods("GET")
 	router.HandleFunc("/exams/{id}", handler.DeleteExam).Methods("DELETE")
-	router.HandleFunc("/exams", handler.AddExam).Methods("PUT")
+	router.HandleFunc("/exams", handler.AddExam).Methods("POST")
 
 	// Add panic middleware
 	router.Use(handler.PanicRecovery)

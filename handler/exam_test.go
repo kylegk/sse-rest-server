@@ -54,7 +54,7 @@ func addExamTestRoutes() (*mux.Router, error) {
 	router.HandleFunc("/exams/all", GetAllExams).Methods("GET")
 	router.HandleFunc("/exams/{id}", GetExamByID).Methods("GET")
 	router.HandleFunc("/exams/{id}", DeleteExam).Methods("DELETE")
-	router.HandleFunc("/exams", AddExam).Methods("PUT")
+	router.HandleFunc("/exams", AddExam).Methods("POST")
 
 	return router, nil
 }
@@ -196,7 +196,8 @@ func TestAddExam(t *testing.T) {
 		return
 	}
 
-	request, _ := http.NewRequest("PUT", "/exams", bytes.NewBuffer(j))
+	request, _ := http.NewRequest("POST", "/exams", bytes.NewBuffer(j))
+	request.Header.Set("Content-Type", "application/json; charset=UTF-8")
 	response := httptest.NewRecorder()
 	router.ServeHTTP(response, request)
 
