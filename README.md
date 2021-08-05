@@ -178,7 +178,7 @@ The project makes heavy use of two libraries to collect and store the events. Fo
 {
         "exam": 12345,
         "score": 0.78,
-        "studentid": "test.student"}
+        "studentid": "test.student"
 }
 ```
 
