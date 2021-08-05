@@ -240,7 +240,7 @@ To build the Docker container, perform the following steps:
 ```
 cd /path/to/project
 docker build -t launchdarkly-coding-test .
-docker run -d -p 8080:8080 launchdarkly-coding-test
+docker run -d -p 8080:8080 sse-rest-server
 ```
 
 Once the container has started, you can connect to it and view the output of any logs in the application, such as requests and errors.
