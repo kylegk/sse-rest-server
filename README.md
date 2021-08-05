@@ -106,6 +106,7 @@ The project makes heavy use of two libraries to collect and store the events. Fo
          "score" : 0.780391071563619,
          "studentid" : "Andreane1"
       },
+   ]
 }
 ```
 
